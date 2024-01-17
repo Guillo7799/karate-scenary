@@ -10,6 +10,7 @@ repositories {
 }
 
 dependencies {
+    testImplementation("com.intuit.karate:karate-junit5:1.2.0.RC4")
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
 }
