@@ -29,14 +29,14 @@
 2. Hacer clic derecho sobre el archivo UserRunner
 3. Hacer clic en Run 'UserRunner'
 
-![Ejecutar.png](..%2FAdjuntos%2FEjecutar.png)
+![img_2.png](img_2.png)
 
 ### Para comprobar el reporte de pruebas
 1. Dirigirse a la carpeta karate-scenary/build/karate-reports
 2. Hacer clic derecho sobre el archivo: karate-summary.html
 3. Seleccionar con cual navegador desea ver el reporte
 
-![Reporte1.png](..%2FAdjuntos%2FReporte1.png)
+![img_3.png](img_3.png)
 
 ### Visualización de reporte:
 
