@@ -30,13 +30,13 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2024-01-18 05:21:41 p. m.</div>
+    <div>2024-01-18 10:16:22 p. m.</div>
   </div>        
 </div>
 
         <div class="nav-container">
           <div class="nav-item passed">
-            <a href="#[5:48]"><span>[5:48]</span> <span>Delete created user</span></a>
+            <a href="#[3:34]"><span>[3:34]</span> <span>Update name and email user</span></a>
           </div>
         </div>
       </div>
@@ -50,29 +50,29 @@
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[5:48]">
+          <div class="scenario-heading" id="[3:34]">
             <div class="heading-container">
               <div class="scenario-tags">
-                <a class="badge badge-primary" href="karate-tags.html">deleteUser</a>
+                <a class="badge badge-primary" href="karate-tags.html">updateDatesUser</a>
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[5:48]</span>
-                <span class="scenario-name">Delete created user</span>
+                Scenario: <span>[3:34]</span>
+                <span class="scenario-name">Update name and email user</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1104</span>
+              <span>ms:</span>&nbsp;<span>1180</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[5:48]bg">
+            <div class="step-container" id="[3:34]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[5:48]bg"><div>
+          <div data-parent="[3:34]bg"><div>
   
 
   
@@ -85,7 +85,7 @@
         <span>*</span>&nbsp;<span>url &#39;https://petstore.swagger.io/v2&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -100,7 +100,7 @@
 
 </div>
 </div>
-          <div data-parent="[5:48]bg"><div>
+          <div data-parent="[3:34]bg"><div>
   
 
   <div class="step-row">
@@ -120,7 +120,7 @@
         <span>*</span>&nbsp;<span>def userStructure = read(&quot;structUser.json&quot;)</span>
       </div>
     </div>
-    <div class="time-cell passed">62</div>
+    <div class="time-cell passed">44</div>
   </div>
 
    
@@ -135,7 +135,7 @@
 
 </div>
 </div>
-          <div data-parent="[5:48]bg"><div>
+          <div data-parent="[3:34]bg"><div>
   
 
   
@@ -148,7 +148,7 @@
         <span>*</span>&nbsp;<span>def file = read(&#39;userData.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -163,7 +163,7 @@
 
 </div>
 </div>
-          <div data-parent="[5:48]bg"><div>
+          <div data-parent="[3:34]bg"><div>
   
 
   
@@ -197,14 +197,14 @@
   
 
   <div class="step-row">
-    <div class="step-container" id="0.49">
-      <div class="step-ref passed">49</div>
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
       
       <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;user&#39;, username</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -225,14 +225,14 @@
   
 
   <div class="step-row">
-    <div class="step-container" id="0.50">
-      <div class="step-ref passed">50</div>
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method DELETE</span>
+        <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">1030</div>
+    <div class="time-cell passed">760</div>
   </div>
 
    
@@ -241,17 +241,17 @@
 
   
 
-  <div class="preformatted" data-parent="0.50">17:21:40.820 request:
-1 &gt; DELETE https://petstore.swagger.io/v2/user/galesdev
+  <div class="preformatted" data-parent="0.36">22:16:21.889 request:
+1 &gt; GET https://petstore.swagger.io/v2/user/galesdev
 1 &gt; Host: petstore.swagger.io
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-17:21:41.492 response time in milliseconds: 669
+22:16:22.413 response time in milliseconds: 522
 1 &lt; 200
-1 &lt; Date: Thu, 18 Jan 2024 22:21:42 GMT
+1 &lt; Date: Fri, 19 Jan 2024 03:16:23 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -259,7 +259,7 @@
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Server: Jetty(9.2.9.v20150224)
-{&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;galesdev&quot;}
+{&quot;id&quot;:7,&quot;username&quot;:&quot;galesdev&quot;,&quot;firstName&quot;:&quot;gales&quot;,&quot;lastName&quot;:&quot;rober&quot;,&quot;email&quot;:&quot;gales@rober.com&quot;,&quot;password&quot;:&quot;password01&quot;,&quot;phone&quot;:&quot;0987654321&quot;,&quot;userStatus&quot;:1}
 
 </div>   
 
@@ -273,8 +273,8 @@
   
 
   <div class="step-row">
-    <div class="step-container" id="0.51">
-      <div class="step-ref passed">51</div>
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
@@ -290,6 +290,343 @@
   
 
      
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def fileCopy = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>copy file = read(&#39;userData.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set fileCopy.firstName = &#39;Guillermo&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set fileCopy.email = &#39;guillermo@test.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;user&#39;, username</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request fileCopy</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">357</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.44">22:16:22.452 request:
+2 &gt; PUT https://petstore.swagger.io/v2/user/galesdev
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 162
+2 &gt; Host: petstore.swagger.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;id&quot;:7,&quot;username&quot;:&quot;galesdev&quot;,&quot;firstName&quot;:&quot;Guillermo&quot;,&quot;lastName&quot;:&quot;rober&quot;,&quot;email&quot;:&quot;guillermo@test.com&quot;,&quot;password&quot;:&quot;password01&quot;,&quot;phone&quot;:&quot;0987654321&quot;,&quot;userStatus&quot;:1}
+
+22:16:22.780 response time in milliseconds: 327
+2 &lt; 200
+2 &lt; Date: Fri, 19 Jan 2024 03:16:24 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+2 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+2 &lt; Server: Jetty(9.2.9.v20150224)
+{&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;7&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def newData = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Datos actualizados&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.47">22:16:22.784 [print] Datos actualizados 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print newData</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.48">22:16:22.786 [print] {
+  &quot;code&quot;: 200,
+  &quot;type&quot;: &quot;unknown&quot;,
+  &quot;message&quot;: &quot;7&quot;
+}
+ 
+</div>   
 
   
 

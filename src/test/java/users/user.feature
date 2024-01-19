@@ -32,12 +32,20 @@ Feature: Admin users process
 
   @updateDatesUser
   Scenario: Update name and email user
-    * copy file = read('userData.json')
     Given path 'user', username
-    Then request {"firstName":"sonic", "email":"sonic@prueba.com"}
+    When method GET
+    Then status 200
+    * def fileCopy = response
+    * copy file = read('userData.json')
+    * set fileCopy.firstName = 'Guillermo'
+    * set fileCopy.email = 'guillermo@test.com'
+    Given path 'user', username
+    And request fileCopy
     When method PUT
     Then status 200
-    #And match
+    * def newData = response
+    * print 'Datos actualizados'
+    * print newData
 
   @finUserUpdated
   Scenario: Find user updated successfully
