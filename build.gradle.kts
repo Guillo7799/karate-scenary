@@ -18,3 +18,13 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
+
+sourceSets{
+    test{
+        resources{
+            srcDir("src/test/java")
+            exclude("**/*.java")
+        }
+    }
+}
+
